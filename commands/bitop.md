@@ -49,7 +49,7 @@ the population counting operation is performed.
 See the article called "[Fast easy realtime metrics using Redis
 bitmaps][hbgc212fermurb]" for a interesting use cases.
 
-[hbgc212fermurb]: http://blog.getspool.com/2011/11/29/fast-easy-realtime-metrics-using-redis-bitmaps
+[hbgc212fermurb]: https://blog.getspool.com/2011/11/29/fast-easy-realtime-metrics-using-redis-bitmaps
 
 ## Performance considerations
 

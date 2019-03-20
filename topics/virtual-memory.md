@@ -8,7 +8,7 @@ stable Redis distribution in Redis 2.0. However Virtual Memory (called VM
 starting from now) is already available and stable enough to be tests in the
 unstable branch of Redis available [on Git][redissrc].
 
-[redissrc]: http://github.com/antirez/redis
+[redissrc]: https://github.com/antirez/redis
 
 ## Virtual Memory explained in simple words
 
@@ -183,7 +183,7 @@ Redis process while creating a very big file at once.
 For a list of file systems supporting spare files, [check this check this
 Wikipedia page comparing different files systems][wikifs].
 
-[wikifs]: http://en.wikipedia.org/wiki/Comparison_of_file_systems
+[wikifs]: https://en.wikipedia.org/wiki/Comparison_of_file_systems
 
 ## Monitoring the VM
 
@@ -192,7 +192,7 @@ interested to know how it's working: how many objects are swapped in total,
 the number of objects swapped and loaded every second, and so forth.
 
 There is an utility that is very handy in checking how the VM is working, that
-is part of [Redis Tools](http://github.com/antirez/redis-tools). This tool is
+is part of [Redis Tools](https://github.com/antirez/redis-tools). This tool is
 called redis-stat, and using it is pretty straightforward:
 
     $ ./redis-stat vmstat

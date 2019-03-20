@@ -3,7 +3,7 @@ Pub/Sub
 
 `SUBSCRIBE`, `UNSUBSCRIBE` and `PUBLISH`
 implement the [Publish/Subscribe messaging
-paradigm](http://en.wikipedia.org/wiki/Publish/subscribe) where
+paradigm](https://en.wikipedia.org/wiki/Publish/subscribe) where
 (citing Wikipedia) senders (publishers) are not programmed to send
 their messages to specific receivers (subscribers). Rather, published
 messages are characterized into channels, without knowledge of what (if

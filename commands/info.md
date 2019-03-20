@@ -207,4 +207,4 @@ For each database, the following line is added:
 
 *   `dbXXX`:keys=XXX,expires=XXX
 
-[hcgcpgp]: http://code.google.com/p/google-perftools/
+[hcgcpgp]: https://code.google.com/p/google-perftools/

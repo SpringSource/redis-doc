@@ -2,7 +2,7 @@
 specifying the number of seconds representing the TTL (time to live), it takes
 an absolute [Unix timestamp][hewowu] (seconds since January 1, 1970).
 
-[hewowu]: http://en.wikipedia.org/wiki/Unix_time
+[hewowu]: https://en.wikipedia.org/wiki/Unix_time
 
 Please for the specific semantics of the command refer to the documentation of
 `EXPIRE`.

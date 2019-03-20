@@ -103,11 +103,11 @@ connections, the comparison is actually meaningful.
 This perfect example is illustrated by the dialog between Redis (antirez) and
 memcached (dormando) developers.
 
-[antirez 1 - On Redis, Memcached, Speed, Benchmarks and The Toilet](http://antirez.com/post/redis-memcached-benchmark.html)
+[antirez 1 - On Redis, Memcached, Speed, Benchmarks and The Toilet](http://oldblog.antirez.com/post/redis-memcached-benchmark.html)
 
-[dormando - Redis VS Memcached (slightly better bench)](http://dormando.livejournal.com/525147.html)
+[dormando - Redis VS Memcached (slightly better bench)](https://dormando.livejournal.com/525147.html)
 
-[antirez 2 - An update on the Memcached/Redis benchmark](http://antirez.com/post/update-on-memcached-redis-benchmark.html)
+[antirez 2 - An update on the Memcached/Redis benchmark](http://oldblog.antirez.com/post/update-on-memcached-redis-benchmark.html)
 
 You can see that in the end, the difference between the two solutions is not
 so staggering, once all technical aspects are considered. Please note both

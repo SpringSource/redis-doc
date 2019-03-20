@@ -18,7 +18,7 @@ For example:
 
   # A URL pointing to the repository where users can
   # find the code.
-  "repository": "http://github.com/Shumkov/Rediska",
+  "repository": "https://github.com/Shumkov/Rediska",
 
   # A short, free-text description of the client.
   # Should be objective. The goal is to help users

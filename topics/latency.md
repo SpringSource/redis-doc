@@ -522,7 +522,7 @@ Now, if you run older distributions (RH 5, SLES 10-11, or derivatives), and
 not afraid of a few hacks, Redis requires to be patched in order to support
 huge pages.
 
-The first step would be to read [Mel Gorman's primer on huge pages](http://lwn.net/Articles/374424/)
+The first step would be to read [Mel Gorman's primer on huge pages](https://lwn.net/Articles/374424/)
 
 There are currently two ways to patch Redis to support huge pages.
 

@@ -1,24 +1,24 @@
 A case study: Design and implementation of a simple Twitter clone using only the Redis key-value store as database and PHP
 ===
 
-In this article I'll explain the design and the implementation of a [simple clone of Twitter](http://retwis.antirez.com) written using PHP and Redis as only database. The programming community uses to look at key-value stores like special databases that can't be used as drop in replacement for a relational database for the development of web applications. This article will try to prove the contrary.
+In this article I'll explain the design and the implementation of a [simple clone of Twitter](http://retwis.redis.io) written using PHP and Redis as only database. The programming community uses to look at key-value stores like special databases that can't be used as drop in replacement for a relational database for the development of web applications. This article will try to prove the contrary.
 
-Our Twitter clone, [called Retwis](http://retwis.antirez.com), is structurally simple, has very good performance, and can be distributed among N web servers and M Redis servers with very little effort. You can find the source code [here](http://code.google.com/p/redis/downloads/list).
+Our Twitter clone, [called Retwis](http://retwis.redis.io), is structurally simple, has very good performance, and can be distributed among N web servers and M Redis servers with very little effort. You can find the source code [here](https://code.google.com/p/redis/downloads/list).
 
 We use PHP for the example since it can be read by everybody. The same (or... much better) results can be obtained using Ruby, Python, Erlang, and so on.
 
-**Note:** [Retwis-RB](http://retwisrb.danlucraft.com/) is a port of Retwis to
+**Note:** [Retwis-RB](https://retwisrb.danlucraft.com/) is a port of Retwis to
 Ruby and Sinatra written by Daniel Lucraft! With full source code included of
 course, the Git repository is linked in the footer of the web page. The rest
 of this article targets PHP, but Ruby programmers can also check the other
 source code, it conceptually very similar.
 
-**Note:** [Retwis-J](http://retwisj.cloudfoundry.com/) is a port of Retwis to
-Java, using the Spring Data Framework, written by [Costin Leau](http://twitter.com/costinl). The source code
+**Note:** [Retwis-J](https://retwisj.cloudfoundry.com/) is a port of Retwis to
+Java, using the Spring Data Framework, written by [Costin Leau](https://twitter.com/costinl). The source code
 can be found on
 [GitHub](https://github.com/SpringSource/spring-data-keyvalue-examples) and
 there is comprehensive documentation available at
-[springsource.org](http://j.mp/eo6z6I).
+[springsource.org](https://j.mp/eo6z6I).
 
 Key-value stores basics
 ---
@@ -77,7 +77,7 @@ LRANGE uses zero-based indexes, that is the first element is 0, the second 1, an
 
     LRANGE mylist 0 -1 => c,b,a
 
-Other important operations are LLEN that returns the length of the list, and LTRIM that is like LRANGE but instead of returning the specified range *trims* the list, so it is like _Get range from mylist, Set this range as new value_ but atomic. We will use only this List operations, but make sure to check the [Redis documentation](http://code.google.com/p/redis/wiki/README) to discover all the List operations supported by Redis.
+Other important operations are LLEN that returns the length of the list, and LTRIM that is like LRANGE but instead of returning the specified range *trims* the list, so it is like _Get range from mylist, Set this range as new value_ but atomic. We will use only this List operations, but make sure to check the [Redis documentation](https://code.google.com/p/redis/wiki/README) to discover all the List operations supported by Redis.
 
 The set data type
 ---
@@ -108,7 +108,7 @@ Okay, I think we are ready to start coding!
 Prerequisites
 ---
 
-If you didn't download it already please grab the [source code of Retwis](http://code.google.com/p/redis/downloads/list). It's a simple tar.gz file with a few of PHP files inside. The implementation is very simple. You will find the PHP library client inside (redis.php) that is used to talk with the Redis server from PHP. This library was written by [Ludovico Magnocavallo](http://qix.it) and you are free to reuse this in your own projects, but for updated version of the library please download the Redis distribution. (Note: there are now better PHP libraries available, check our [clients page](/clients).
+If you didn't download it already please grab the [source code of Retwis](https://code.google.com/p/redis/downloads/list). It's a simple tar.gz file with a few of PHP files inside. The implementation is very simple. You will find the PHP library client inside (redis.php) that is used to talk with the Redis server from PHP. This library was written by [Ludovico Magnocavallo](http://qix.it) and you are free to reuse this in your own projects, but for updated version of the library please download the Redis distribution. (Note: there are now better PHP libraries available, check our [clients page](/clients).
 
 Another thing you probably want is a working Redis server. Just get the source, compile with make, and run with ./redis-server and you are done. No configuration is required at all in order to play with it or to run Retwis in your computer.
 

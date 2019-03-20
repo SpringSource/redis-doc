@@ -95,7 +95,7 @@ A good source to understand how Linux Virtual Memory work and other
 alternatives for `overcommit_memory` and `overcommit_ratio` is this classic
 from Red Hat Magazine, ["Understanding Virtual Memory"][redhatvm].
 
-[redhatvm]: http://www.redhat.com/magazine/001nov04/features/vm/
+[redhatvm]: https://www.redhat.com/magazine/001nov04/features/vm/
 
 ## Are Redis on-disk-snapshots atomic?
 
@@ -137,4 +137,4 @@ It means REmote DIctionary Server.
 
 Originally Redis was started in order to scale [LLOOGG][lloogg]. But after I got the basic server working I liked the idea to share the work with other guys, and Redis was turned into an open source project.
 
-[lloogg]: http://lloogg.com
+[lloogg]: https://lloogg.com

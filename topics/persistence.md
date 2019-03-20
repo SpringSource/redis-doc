@@ -1,4 +1,4 @@
-This page provides a technical description of Redis persistence, it is a suggested read for all the Redis users. For a wider overview of Redis persistence and the durability guarantees it provides you may want to also read [Redis persistence demystified](http://antirez.com/post/redis-persistence-demystified.html).
+This page provides a technical description of Redis persistence, it is a suggested read for all the Redis users. For a wider overview of Redis persistence and the durability guarantees it provides you may want to also read [Redis persistence demystified](http://oldblog.antirez.com/post/redis-persistence-demystified.html).
 
 Redis Persistence
 ===
@@ -79,7 +79,7 @@ This strategy is known as _snapshotting_.
 
 Whenever Redis needs to dump the dataset to disk, this is what happens:
 
-* Redis [forks](http://linux.die.net/man/2/fork). We now have a child
+* Redis [forks](https://linux.die.net/man/2/fork). We now have a child
 and a parent process.
 
 * The child starts to write the dataset to a temporary RDB file.
@@ -129,7 +129,7 @@ time. Redis 2.4 is able to trigger log rewriting automatically (see the
 ### How durable is the append only file?
 
 You can configure how many times Redis will
-[`fsync`](http://linux.die.net/man/2/fsync) data on disk. There are
+[`fsync`](https://linux.die.net/man/2/fsync) data on disk. There are
 three options:
 
 * `fsync` every time a new command is appended to the AOF. Very very
@@ -169,7 +169,7 @@ files.
 Log rewriting uses the same copy-on-write trick already in use for
 snapshotting.  This is how it works:
 
-* Redis [forks](http://linux.die.net/man/2/fork), so now we have a child
+* Redis [forks](https://linux.die.net/man/2/fork), so now we have a child
 and a parent process.
 
 * The child starts writing the new AOF in a temporary file.

@@ -181,7 +181,7 @@ submitted links (news) to the list is the following:
     (integer) 1
     $ redis-cli set news:1:title "Redis is simple"
     OK
-    $ redis-cli set news:1:url "http://code.google.com/p/redis"
+    $ redis-cli set news:1:url "https://code.google.com/p/redis"
     OK
     $ redis-cli lpush submitted.news 1
     OK

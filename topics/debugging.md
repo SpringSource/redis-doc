@@ -71,7 +71,7 @@ In order to attach GDB the first thing you need is the *process ID* of the runni
 In the above example the process ID is **58414**.
 
 + Login into your Redis server.
-+ (Optional but recommended) Start **screen** or **tmux** or any other program that will make sure that your GDB session will not be closed if your ssh connection will timeout. If you don't know what screen is do yourself a favour and [Read this article](http://www.linuxjournal.com/article/6340)
++ (Optional but recommended) Start **screen** or **tmux** or any other program that will make sure that your GDB session will not be closed if your ssh connection will timeout. If you don't know what screen is do yourself a favour and [Read this article](https://www.linuxjournal.com/article/6340)
 + Attach GDB to the running Redis server typing:
 
     gdb `<path-to-redis-executable>` `<pid>`
@@ -182,4 +182,4 @@ Finally you can send everything to the Redis core team:
 Thank you
 ---------
 
-Your help is extremely important! Many issues can only be tracked this way, thanks! It is also possible that helping Redis debugging you'll be among the winners of the next [Redis Moka Award](http://antirez.com/post/redis-moka-awards-2011.html).
+Your help is extremely important! Many issues can only be tracked this way, thanks! It is also possible that helping Redis debugging you'll be among the winners of the next [Redis Moka Award](http://oldblog.antirez.com/post/redis-moka-awards-2011.html).

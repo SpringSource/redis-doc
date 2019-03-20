@@ -9,7 +9,7 @@ Let us figure it out through a series of Q&As.
 Q: What do you expect a network server to be doing all the time? <br/>
 A: Watch for inbound connections on the port its listening and accept them.
 
-Q: Calling [accept](http://man.cx/accept%282%29 accept) yields a descriptor. What do I do with it?<br/>
+Q: Calling [accept](https://man.cx/accept%282%29 accept) yields a descriptor. What do I do with it?<br/>
 A: Save the descriptor and do a non-blocking read/write operation on it.
 
 Q: Why does the read/write have to be non-blocking?<br/>
@@ -25,4 +25,4 @@ Q: So are there any open source event libraries that do what you just described?
 A: Yes. `libevent` and `libev` are two such event libraries that I can recall off the top of my head.
 
 Q: Does Redis use such open source event libraries for handling socket I/O?<br/>
-A: No. For various [reasons](http://groups.google.com/group/redis-db/browse_thread/thread/b52814e9ef15b8d0/) Redis uses its own event library.
+A: No. For various [reasons](https://groups.google.com/group/redis-db/browse_thread/thread/b52814e9ef15b8d0/) Redis uses its own event library.
